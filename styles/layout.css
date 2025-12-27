@@ -2428,3 +2428,25 @@ footer h3:hover {
         100% {transform: translateX(-10px) translateY(-5px) scaleY(0.8)}
     }
 }
+
+@media(max-width: 375px) {
+    .frightened-man {
+        width: 100px;
+        margin: 0px;
+        margin-right: 240px;
+        margin-top: 40px;
+        padding-bottom: 16px;
+        position: relative;
+        animation: frightened-man 0.1s infinite;
+    }
+
+    .frightened-man-eyes {
+        position: absolute;
+        width: 50px;
+        left: -70px;
+        margin-right: 200px;
+        margin-top: 90px;
+
+        animation: frightened-eyes 0.1s infinite;
+    }
+}

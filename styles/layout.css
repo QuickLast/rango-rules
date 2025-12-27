@@ -1,0 +1,1931 @@
+*{
+    font-family: 'Manrope', sans-serif;
+    background-color: transparent;
+    color: white;
+    scroll-behavior: smooth
+}
+
+body {
+    background-color: black;
+    cursor: url('images/bitmap/cursor.png'), pointer;
+}
+
+h2 {
+    font-family: "Angry", sans-serif;
+    font-size: 150px;
+    margin-bottom: -20px;
+}
+
+h3 {
+    font-family: "Angry", sans-serif;
+    font-size: 110px;
+}
+
+p {
+    font-family: "Manrope", sans-serif;
+    line-height: 1.4;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.black-text  {
+    color: black !important;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+    padding: 24px;
+    padding-top: 16px;
+}
+
+.hero-h1-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1{
+    font-family: "Angry", sans-serif;
+    font-size: 164px;
+    color: #FF33EB;
+    margin-bottom: -30px;
+}
+
+.hero-title p {
+    font-family: "Angry", sans-serif;
+    font-size: 48px;
+    margin-top: 24px;
+    margin-left: 8px;
+    margin-bottom: -10px;
+}
+
+.hero-eyes {
+    height: 200px;
+    background-color: #FF33EB;
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-back {
+    position: absolute;
+    width: 447px;
+    height: 100px;
+    background-color: transparent;
+
+    animation: back-eyes 6s infinite;
+}
+
+.hero-front {
+    position: relative;
+    width: 308px;
+    height: 43px;
+    background-color: transparent;
+
+    animation: eyes 6s infinite;
+}
+
+@keyframes eyes {
+    0% {transform: translatex(0px); transform: translatey(0px)}
+    10% {transform: translatey(-1px)}
+    15% {transform: translatey(7px)}
+    20% {transform: translatey(-1px)}
+    25% {transform: translatey(7px)}
+    45% {transform: translatey(0px)}
+    55% {transform: translatex(20px)}
+    70% {transform: translatex(-20px)}
+    100% {transform: translatex(0px); transform: translatey(0px)}
+}
+
+@keyframes back-eyes {
+    0% {transform: translatex(0px); transform: translatey(0px)}
+    10% {transform: translatey(0px)}
+    15% {transform: translatey(2px)}
+    20% {transform: translatey(0px)}
+    25% {transform: translatey(2px)}
+    45% {transform: translatey(0px)}
+    55% {transform: translatex(5px)}
+    70% {transform: translatex(-5px)}
+    100% {transform: translatex(0px); transform: translatey(0px)}
+}
+
+.hero-anchors {
+    margin-top: 16px;
+}
+
+.hero-anchors ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.h-anchor {
+    width: 220px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    background-color: #1D1D1D;
+    text-align: center;
+    font-family: "Angry", sans-serif;
+    font-size: 18px;
+}
+
+.hero-anchors a {
+    text-decoration: none;
+}
+
+.h-anchor:hover {
+    color:black;
+    background-color: #FF33EB;
+    transition: background-color 1s ease-in-out;
+    transition: color 0.2s ease-in-out;
+}
+
+/* MARQUEE 1 */
+
+.marquee-1 {
+    height: 124px;
+}
+
+.s2-marquee {
+    margin-top: 80px;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.marquee-first {
+    animation: marquee1 20s infinite linear;
+    animation-delay: -20s;
+}
+
+.marquee-second {
+    animation: marquee2 20s infinite linear;
+    animation-delay: -10s;
+}
+
+@keyframes marquee1 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee2 {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+/* BEOPEN (SECOND) SECTION */
+
+.beopen {
+    margin-top: -5px;
+    background-color: #FF33EB;
+    height: 750px;
+    padding: 24px;
+}
+
+.beopen-h3-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: transparent;
+    margin-top: 48px;
+    gap: 24px;
+}
+
+.beopen h3 {
+    color: white;
+}
+
+.beopen p {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Manrope", sans-serif;
+    line-height: 1.4;
+}
+
+.beopen h2{
+    color: white;
+}
+
+.beopen-photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.talking-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.talking-man {
+    position: relative;
+    padding: 48px;
+
+    animation: talking-man 2s infinite;
+}
+
+.talking-man-mouth {
+    position: absolute;
+    margin-top: 310px;
+    margin-left: 30px;
+
+    animation: talking-mouth 2s infinite;
+}
+
+@keyframes talking-mouth {
+    0% {transform: scale(1)}
+    10% {transform: scale(1.4, 1.2) rotate(5deg);}
+    30% {transform: scale(1.2, 0.9) rotate(-5deg);}
+    50% {transform: scale(1.4, 1.0)}
+    60% {transform: scale(0.9, 1.0) rotate(0deg);}
+    70% {transform: scale(0.5, 1.0) rotate(0deg);}
+    80% {transform: scale(1.0, 1.4) rotate(5deg);}
+    100% {transform: scale(1)}
+}
+
+@keyframes talking-man {
+    0% {transform: scale(1)}
+    10% {transform: rotate(5deg);}
+    30% {transform: rotate(-5deg);}
+    60% {transform: rotate(0deg);}
+    80% {transform: rotate(5deg);}
+    100% {transform: scale(1)}
+}
+
+.beopen-photo-2 {
+    margin-top: -24px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.frightened-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.frightened-man {
+    position: relative;
+    padding-left: 24px;
+    padding-bottom: 16px;
+    animation: frightened-man 0.1s infinite;
+}
+
+.frightened-man-eyes {
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 130px;
+    width: 131px;
+
+    animation: frightened-eyes 0.1s infinite;
+}
+
+@keyframes frightened-eyes {
+    0% {transform: translateX(0px);}
+    100% {transform: translateX(2px)}
+}
+
+@keyframes frightened-man {
+    0% {transform: translateX(2px)}
+    100% {transform: translateX(0px)}
+}
+
+/* MARQUEE 2 */
+
+.marquee-2 {
+    height: 240px;
+}
+
+.s3-marquee {
+    margin-top: 64px;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.marquee-first {
+    animation: marquee1 20s infinite linear;
+    animation-delay: -20s;
+}
+
+.marquee-second {
+    animation: marquee2 20s infinite linear;
+    animation-delay: -10s;
+}
+
+@keyframes marquee1 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee2 {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+/* FRIENDSHIP (THIRD) SECTION */
+
+.friendship {
+    height: 700px;
+    padding: 24px;
+}
+
+.friendship-title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px;
+}
+
+.friendship-h2-description {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    align-items: center;
+}
+
+.friendship p {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Manrope", sans-serif;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.friendship-icon-h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+    margin-right: 16px;
+}
+
+.inside-text {
+    font-family: "Angry", sans-serif;
+    font-size: 110px;
+    color: #FF33EB;
+}
+
+.white-star {
+    width: 170px;
+    margin-left: 8%;
+    margin-bottom: 10px;
+}
+
+.white-star:hover {
+    animation: star-dance 3s infinite;
+    filter: drop-shadow(0 0 20px #ffffff);
+    transition: all 0.5s ease-in-out;
+}
+
+@keyframes star-dance{
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(40deg);}
+    40% {transform: rotate(-20deg);}
+    60% {transform: rotate(80deg);}
+    80% {transform: rotate(40deg);}
+    100% {transform: rotate(0deg);}
+}
+
+/* VIRUSES (FOURTH) SECTION */
+
+.viruses {
+    height: 800px;
+    padding: 24px;
+    background-color: #FF33EB;
+    margin-top: -5px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.viruses-title {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.viruses-h3-h2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.viruses-h3-h2 h2 {
+    color: black;
+}
+
+.viruses-photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.viruses-man {
+    display: flex;
+    flex-direction: row;
+}
+
+.hostile-man {
+    position: relative;
+    height: 365px;
+    margin-top: 64px;
+    margin-left: 26%;
+    animation: hostile-man 2s infinite;
+}
+
+@keyframes hostile-man {
+    0% {transform: translateX(0px) translateY(0px)}
+    10% {transform: translateX(-20px) translateY(-30px)}
+    20% {transform: translateX(-40px) translateY(-10px)}
+    40% {transform: translateX(-20px) translateY(-30px)}
+    50% {transform: translateX(0px) translateY(0px)}
+    60% {transform: translateX(-20px) translateY(-30px)}
+    80% {transform: translateX(-40px) translateY(-10px)}
+    90% {transform: translateX(-20px) translateY(-30px)}
+    100% {transform: translateX(0px) translateY(0px)}
+}
+
+.hostile-man-eyes {
+    margin-left: -180px;
+    margin-top: -20px;
+    animation: hostile-eyes 2s infinite;
+}
+
+@keyframes hostile-eyes {
+    0% {transform: translateX(0px) translateY(0px)}
+    10% {transform: translateX(-5px) translateY(-30px)}
+    20% {transform: translateX(-25px) translateY(-10px)}
+    40% {transform: translateX(-5px) translateY(-30px)}
+    50% {transform: translateX(0px) translateY(0px)}
+    60% {transform: translateX(-20px) translateY(-30px)}
+    80% {transform: translateX(-40px) translateY(-10px)}
+    90% {transform: translateX(-20px) translateY(-30px)}
+    100% {transform: translateX(0px) translateY(0px)}
+}
+
+.shield {
+    margin-top: 64px;
+    margin-left: 80px;
+    animation: shield-anim 2s infinite;
+}
+
+@keyframes shield-anim {
+    0% {transform: translateX(0px) translateY(0px)}
+    10% {transform: translateX(-20px) translateY(-30px) rotate(-10deg)}
+    20% {transform: translateX(-40px) translateY(-10px)}
+    40% {transform: translateX(-20px) translateY(-30px)}
+    50% {transform: translateX(0px) translateY(0px) rotate(-0deg)}
+    60% {transform: translateX(-20px) translateY(-30px)}
+    80% {transform: translateX(-40px) translateY(-10px) rotate(-10deg)}
+    90% {transform: translateX(-20px) translateY(-30px) rotate(-0deg)}
+    100% {transform: translateX(0px) translateY(0px)}
+}
+
+.viruses-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plane-group {
+    display: flex;
+    margin-right: 48px;
+    margin-top: 32px;
+}
+
+.plane-1 {
+    height: 70px;
+    animation: plane-1 2s infinite;
+}
+
+@keyframes plane-1 {
+    0% {transform: translateX(0px) translateY(0px)}
+    10% {transform: translateX(-140px) translateY(100px) rotate(-20deg)}
+    40% {transform: translateX(0px) translateY(0px)}
+    60% {transform: translateX(0px) translateY(5px)}
+    80% {transform: translateX(0px) translateY(0px)}
+    100% {transform: translateX(10px) translateY(-5px) rotate(5deg)}
+}
+
+.plane-2 {
+    height: 120px;
+    margin-top: 64px;
+    animation: plane-2 2s infinite;
+}
+
+@keyframes plane-2 {
+    0% {transform: translateX(0px) translateY(5px)}
+    10% {transform: translateX(0px) translateY(5px)}
+    40% {transform: translateX(0px) translateY(0px)}
+    65% {transform: translateX(10px) translateY(-5px) rotate(5deg)}
+    80% {transform: translateX(-280px) translateY(40px) rotate(-20deg)}
+    90% {transform: translateX(0px) translateY(0px)}
+    100% {transform: translateX(0px) translateY(5px)}
+}
+
+.plane-3 {
+    height: 56px;
+    margin-top: -20px;
+    animation: plane-3 1s infinite;
+}
+
+@keyframes plane-3 {
+    0% {transform: translateX(0px) translateY(0px)}
+    50% {transform: translateX(0px) translateY(5px)}
+    100% {transform: translateX(0px) translateY(0px)}
+}
+
+.viruses-description p {
+    color: white;
+    margin-left: 144px;
+}
+
+/* ATTENTION (FIFTH) SECTION */
+
+.attention {
+    height: 780px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.attention-photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.key-group {
+    display: flex;
+    padding: 64px;
+    padding-top: 80px;
+    z-index: 50;
+}
+
+.key-1 {
+    height: 140px;
+    animation: key auto linear;
+    animation-timeline: scroll(root block);
+}
+
+@keyframes key {
+    0% {transform: translateX(0px)}
+    50% {transform: translateX(0px)}
+    80% {transform: translateX(300px)}
+    100% {transform: translateX(300px)}
+}
+
+.key-2 {
+    margin-top: 180px;
+    margin-left: -80px;
+    height: 220px;
+    animation: key auto linear;
+    animation-timeline: scroll(root block);
+}
+
+.key-3 {
+    margin-top: 40px;
+    margin-left: -240px;
+    height: 120px;
+    animation: key auto linear;
+    animation-timeline: scroll(root block);
+}
+
+.keyhole {
+    height: 387px;
+    margin-top: 140px;
+    margin-right: 80px;
+    animation: keyhole auto linear;
+    animation-timeline: scroll(root block);
+}
+
+@keyframes keyhole {
+    0% {transform: scale(1)}
+    50% {transform: scale(1)}
+    65% {transform: scale(1.7)}
+    100% {transform: scale(1.7)}
+}
+
+.attention-title {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 64px;
+    margin-left: 24px;
+}
+
+.attention-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+}
+
+.attention-description h2 {
+    color: #FF33EB;
+}
+
+/* CROWD (SIXTH) SECTION */
+
+.crowd {
+    height: 700px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    background-color: #FF33EB;
+    margin-top: -5px;
+}
+
+.crowd-photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 322px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 48px;
+}
+
+.crowd-1 {
+    animation: crowd-1 10s infinite;
+}
+
+@keyframes crowd-1{
+    0% { transform: translateX(0px) rotate(0deg)}
+    10% { transform: translateX(-10px) rotate(5deg)}
+    20% { transform: translateX(-20px) rotate(3deg)}
+    30% { transform: translateX(-20px) rotate(0deg)}
+    40% { transform: translateX(-20px)}
+    50% { transform: translateX(-20px) rotate(2deg)}
+    53% { transform: translateX(-20px) rotate(-3deg)}
+    58% { transform: translateX(-20px) rotate(4deg)}
+    62% { transform: translateX(-20px) rotate(4deg)}
+    64% { transform: translateX(-20px) rotate(-3deg)}
+    69% { transform: translateX(-20px) rotate(2deg)}
+    72% { transform: translateX(-20px) rotate(-3deg)}
+    75% { transform: translateX(-20px) rotate(2deg)}
+    80% { transform: translateX(-10px) rotate(0deg)}
+    95% { transform: translateX(0px) rotate(0deg)}
+    100% { transform: translateX(0px) rotate(0deg)}
+}
+
+.crowd-2 {
+    animation: crowd-2 10s infinite;
+}
+
+@keyframes crowd-2 {
+    0% { transform: translateX(0px) rotate(0deg)}
+    10% { transform: translateX(-30px)}
+    20% { transform: translateX(-70px)}
+    30% { transform: translateX(-70px)}
+    40% { transform: translateX(-70px)}
+    50% { transform: translateX(-70px) rotate(-3deg) scaleX(-1)}
+    53% { transform: translateX(-70px) rotate(2deg) scaleX(-1)}
+    58% { transform: translateX(-70px) rotate(-3deg) scaleX(-1)}
+    62% { transform: translateX(-70px) rotate(2deg) scaleX(-1)}
+    64% { transform: translateX(-70px) rotate(-3deg) scaleX(-1)}
+    69% { transform: translateX(-70px) rotate(2deg) scaleX(-1)}
+    72% { transform: translateX(-70px) rotate(-3deg) scaleX(-1)}
+    75% { transform: translateX(-70px) rotate(2deg) scaleX(-1)}
+    80% { transform: translateX(-30px) rotate(0deg) scaleX(0)}
+    95% { transform: translateX(0px) rotate(0deg)}
+    100% { transform: translateX(0px) rotate(0deg)}
+}
+
+.crowd-3 {
+    animation: crowd-3 10s infinite;
+}
+
+@keyframes crowd-3{
+    0% { transform: translateX(0px) rotate(0deg) scaleX(0)}
+    10% { transform: translateX(-50px)}
+    20% { transform: translateX(-80px) rotate(3deg)}
+    30% { transform: translateX(-80px)}
+    40% { transform: translateX(-30px) rotate(0deg) scaleX(-1)}
+    50% { transform: translateX(50px) rotate(-3deg) scaleX(-1)}
+    60% { transform: translateX(10px) rotate(0deg) scaleX(-1)}
+    95% { transform: translateX(0px) rotate(10deg) scaleX(-1)}
+    100% { transform: translateX(0px) rotate(0deg) scaleX(0)}
+}
+
+.crowd-4 {
+    animation: crowd-4 10s infinite;
+}
+
+@keyframes crowd-4{
+    0% { transform: translateX(0px) rotate(0deg)}
+    10% { transform: translateX(-10px)}
+    20% { transform: translateX(-30px) rotate(3deg)}
+    30% { transform: translateX(-30px) rotate(3deg)}
+    35% { transform: translateX(0px) rotate(0deg)}
+    50% { transform: translateX(0px) rotate(-2deg) }
+    60% { transform: translateX(0px) rotate(-5deg)}
+    80% { transform: translateX(0px) rotate(-2deg)}
+    90% { transform: translateX(0px) rotate(0deg)}
+    100% { transform: translateX(0px) rotate(0deg)}
+}
+
+.crowd-title {
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.crowd-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.crowd-description h2 {
+    color: black;
+}
+
+/* FOOTER */
+
+footer {
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+}
+
+.footer-glasses {
+    margin-top: 48px;
+    display: flex;
+}
+
+.glasses {
+    position: relative;
+    width: 83%;
+    margin-left: 15%;
+}
+
+.footer-eyes {
+    position: absolute;
+    width: 36%;
+    margin-top: 8%;
+    margin-left: 46%;
+    animation: glasses auto linear;
+    animation-timeline: scroll(root block);
+}
+
+@keyframes glasses {
+    0% {transform: translateX(0px)}
+    85% {transform: translateX(-20px) translateY(-120px) scaleY(0.3)}
+    90% {transform: translateX(-20px) translateY(-80px) scaleY(0.5)}
+    100% {transform: translateX(-10px) translateY(60px) scaleY(0.8)}
+}
+
+footer h3 {
+    margin-top: 48px;
+    margin-left: 30%;
+}
+
+footer h3:hover {
+    color:#FF33EB;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    padding-bottom: 48px;
+}
+
+.pale-text {
+    color:#595959;
+    font-size: 24px;
+}
+
+/* DESKTOP 1366px */
+
+@media(max-width: 1366px)
+{
+
+    p {
+        font-size: 16px;
+    }
+
+    .hero-h1-logo img {
+        display: none;
+    }
+    .hero-h1-logo {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-title p {
+        display: block;
+        text-align: center;
+    }
+
+    .hero-anchors ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 8px;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .beopen p{
+        display: none;
+    }
+
+    .friendship {
+        height: 1000px;
+    }
+
+    .friendship p {
+        display: none;
+    }
+
+    .friendship-title {
+        align-items: center;
+        justify-content: center;
+        gap: 64px;
+    }
+
+    .friendship-icon-h3 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .friendship-icon-h3 img {
+        margin-bottom: 64px;
+    }
+
+    .white-star {
+        width: 170px;
+        margin: 0px;
+        animation: star-dance 3s infinite;
+        filter: drop-shadow(0 0 20px #ffffff);
+    }
+
+    .keyhole {
+        height: 320px;
+        margin-top: 140px;
+        margin-right: 80px;
+        animation: keyhole auto linear;
+        animation-timeline: scroll(root block);
+    }
+
+    .crowd-photo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 280px;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-top: 48px;
+    }
+}
+
+/* TABLET 1024px */
+
+@media(max-width: 1024px) {
+
+    h1 {
+        font-size: 132px;
+    }
+
+    h2 {
+    font-family: "Angry", sans-serif;
+    font-size: 120px;
+    margin-bottom: -20px;
+    }
+
+    h3 {
+        font-family: "Angry", sans-serif;
+        font-size: 80px;
+    }
+
+    p {
+        display: none;
+        font-size: 16px;
+    }
+
+    .beopen {
+        height: 700px;
+    }
+
+    .beopen-photo-2 {
+        margin-top: -80px;
+    }
+
+    .h-anchor {
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .friendship {
+        height: 900px;
+    }
+
+    .friendship-title {
+        align-items: center;
+        justify-content: center;
+        gap: 64px;
+    }
+
+    .friendship-icon-h3 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .friendship-icon-h3 img {
+        margin-bottom: 64px;
+    }
+
+    .white-star {
+        width: 170px;
+        margin: 0px;
+        animation: star-dance 3s infinite;
+        filter: drop-shadow(0 0 20px #ffffff);
+    }
+
+    .hostile-man {
+        position: relative;
+        height: 300px;
+        margin-top: 64px;
+        margin-left: 26%;
+        animation: hostile-man 2s infinite;
+    }
+
+    .viruses {
+        height: 750px;
+    }
+
+    .viruses p {
+        display: none;
+    }
+
+    .right-brackets {
+        display: none;
+    }
+
+    .viruses-title {
+        justify-content: start;
+        gap: 24px;
+    }
+
+    .hostile-man-eyes {
+        height: 20px;
+        margin-left: -160px;
+        margin-top: 170px;
+        animation: hostile-eyes 2s infinite;
+    }
+
+    .shield {
+        height: 300px;
+        margin-top: 64px;
+        margin-left: 80px;
+        animation: shield-anim 2s infinite;
+    }
+
+    .plane-1 {
+        height: 50px;
+        margin-top: -30px;
+        animation: plane-1 2s infinite;
+    }
+
+    .plane-2 {
+        height: 100px;
+        margin-top: 64px;
+        animation: plane-2 2s infinite;
+    }
+
+    .plane-3 {
+        height: 36px;
+        margin-top: -20px;
+        animation: plane-3 1s infinite;
+    }
+
+    .attention {
+        height: 680px;
+    }
+
+    .attention p{
+        display: block;
+        font-size: 16px;
+    }
+
+    .key-1 {
+        height: 120px;
+        animation: key auto linear;
+        animation-timeline: scroll(root block);
+    }
+
+    @keyframes key {
+        0% {transform: translateX(0px)}
+        50% {transform: translateX(0px)}
+        80% {transform: translateX(100px)}
+        100% {transform: translateX(100px)}
+    }
+
+    .key-2 {
+        margin-top: 180px;
+        margin-left: -80px;
+        height: 200px;
+        animation: key auto linear;
+        animation-timeline: scroll(root block);
+    }
+
+    .key-3 {
+        margin-top: 40px;
+        margin-left: -240px;
+        height: 100px;
+        animation: key auto linear;
+        animation-timeline: scroll(root block);
+    }
+
+    .keyhole {
+        height: 200px;
+        margin-top: 200px;
+        margin-right: 80px;
+        animation: keyhole auto linear;
+        animation-timeline: scroll(root block);
+    }
+
+    @keyframes keyhole {
+        0% {transform: scale(1)}
+        50% {transform: scale(1)}
+        65% {transform: scale(2) translateX(-20px)}
+        100% {transform: scale(2) translateX(-20px)}
+    }
+
+    .crowd {
+        height: 550px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        background-color: #FF33EB;
+        margin-top: -5px;
+    }
+
+    .crowd p{
+        display: block;
+    }
+
+    .crowd-photo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 220px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-top: 48px;
+    }
+
+    .footer-text p{
+        display: block;
+    }
+
+    .pale-text {
+        color:#595959;
+        font-size: 18px;
+    }
+}
+
+/* TABLET 768px */
+
+@media(max-width: 768px) {
+    h1 {
+        font-size: 120px;
+    }
+
+    h2 {
+        font-family: "Angry", sans-serif;
+        font-size: 100px;
+        margin-bottom: -20px;
+    }
+
+    h3 {
+        font-family: "Angry", sans-serif;
+        font-size: 70px;
+    }
+
+    p {
+        display: none;
+        font-size: 16px;
+    }
+
+    .beopen {
+        height: 1000px;
+        gap: 48px;
+    }
+
+    .beopen-photo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 24px;
+        width: 300px;
+    }
+
+    .talking-man {
+        position: relative;
+        padding: 48px;
+        margin-left: -120px;
+        margin-top: 220px;
+        animation: talking-man 2s infinite;
+    }
+
+    .talking-man-mouth {
+        position: absolute;
+        margin-left: -100px;
+        margin-top: 530px;
+        animation: talking-mouth 2s infinite;
+    }
+
+    .beopen-photo-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 24px;
+
+        margin-top: 64px;
+        align-items: end;
+    }
+
+    .beopen-photo-2 h2 {
+        margin-top: 24px;
+        display: block;
+    }
+
+    .frightened-man {
+        margin-right: 400px;
+        margin-top: -200px;
+        padding-bottom: 16px;
+        animation: frightened-man 0.1s infinite;
+    }
+
+    .frightened-man-eyes {
+        margin-top: 140px;
+        margin-left: 130px;
+        width: 131px;
+        margin-top: -60px;
+
+        animation: frightened-eyes 0.1s infinite;
+    }
+
+    @keyframes frightened-eyes {
+        0% {transform: translateX(0px);}
+        100% {transform: translateX(2px)}
+    }
+
+    @keyframes frightened-man {
+        0% {transform: translateX(2px)}
+        100% {transform: translateX(0px)}
+    }
+
+    .viruses {
+        height: 600px;
+        padding: 24px;
+        background-color: #FF33EB;
+        margin-top: -5px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .viruses-h3-h2 {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .viruses-title {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .viruses-title img {
+        display: none;
+    }
+
+    .hostile-man {
+        position: relative;
+        height: 205px;
+        margin-top: 64px;
+        margin-left: 26%;
+        animation: hostile-man 2s infinite;
+    }
+
+    .hostile-man-eyes {
+        margin-left: -110px;
+        margin-top: 135px;
+        height: 14px;
+        animation: hostile-eyes 2s infinite;
+    }
+
+    .shield {
+        margin-top: 64px;
+        margin-left: 80px;
+        height: 200px;
+        animation: shield-anim 2s infinite;
+    }
+
+
+    .plane-group {
+        display: flex;
+        margin-right: 48px;
+        margin-top: 32px;
+    }
+
+    .plane-1 {
+        height: 40px;
+        margin-left: 90px;
+        animation: plane-1 2s infinite;
+    }
+
+    @keyframes plane-1 {
+        0% {transform: translateX(0px) translateY(0px)}
+        10% {transform: translateX(-100px) translateY(100px) rotate(-20deg)}
+        40% {transform: translateX(0px) translateY(0px)}
+        60% {transform: translateX(0px) translateY(5px)}
+        80% {transform: translateX(0px) translateY(0px)}
+        100% {transform: translateX(10px) translateY(-5px) rotate(5deg)}
+    }
+
+    .plane-2 {
+        height: 90px;
+        margin-top: 64px;
+        animation: plane-2 2s infinite;
+    }
+
+    @keyframes plane-2 {
+        0% {transform: translateX(0px) translateY(5px)}
+        10% {transform: translateX(0px) translateY(5px)}
+        40% {transform: translateX(0px) translateY(0px)}
+        65% {transform: translateX(10px) translateY(-5px) rotate(5deg)}
+        80% {transform: translateX(-140px) translateY(20px) rotate(-20deg)}
+        90% {transform: translateX(0px) translateY(0px)}
+        100% {transform: translateX(0px) translateY(5px)}
+    }
+
+    .plane-3 {
+        height: 26px;
+        margin-top: -20px;
+        margin-left: -80px;
+        animation: plane-3 1s infinite;
+    }
+
+    @keyframes plane-3 {
+        0% {transform: translateX(0px) translateY(0px)}
+        50% {transform: translateX(0px) translateY(5px)}
+        100% {transform: translateX(0px) translateY(0px)}
+    }
+
+    .viruses-description p {
+        display: none;
+    }
+
+    .attention {
+        height: 700px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .attention-photo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: -180px;
+    }
+
+    .key-group {
+        display: flex;
+        padding: 64px;
+        padding-top: 80px;
+        z-index: 50;
+    }
+
+    .key-1 {
+        height: 100px;
+        animation: key auto linear;
+        animation-timeline: scroll(root block);
+    }
+
+    @keyframes key {
+        0% {transform: translateX(0px)}
+        50% {transform: translateX(0px)}
+        80% {transform: translateX(300px)}
+        100% {transform: translateX(300px)}
+    }
+
+    .key-2 {
+        margin-top: 180px;
+        margin-left: -80px;
+        height: 180px;
+        animation: key auto linear;
+        animation-timeline: scroll(root block);
+    }
+
+    .key-3 {
+        margin-top: 40px;
+        margin-left: -240px;
+        height: 80px;
+        animation: key auto linear;
+        animation-timeline: scroll(root block);
+    }
+
+    .keyhole {
+        height: 300px;
+        margin-top: 140px;
+        margin-right: 80px;
+        animation: keyhole auto linear;
+        animation-timeline: scroll(root block);
+    }
+
+    @keyframes keyhole {
+        0% {transform: scale(1)}
+        40% {transform: scale(1)}
+        85% {transform: scale(1.7)}
+        100% {transform: scale(1.7)}
+    }
+
+    .crowd {
+        height: 550px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        background-color: #FF33EB;
+        margin-top: -5px;
+    }
+
+    .crowd p{
+        display: block;
+    }
+
+    .crowd-photo {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        height: 180px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-top: 48px;
+    }
+
+    .crowd-1, .crowd-2, .crowd-3, .crowd-4{
+        width: 120px;
+    }
+
+    .footer-text p{
+        display: block;
+        font-size: 14px;
+    }
+
+    .pale-text {
+        color:#595959;
+        font-size: 16px;
+    }
+}
+
+/* MOBILE 320px */
+
+@media(max-width:320px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h3 {
+    font-family: "Angry", sans-serif;
+    font-size: 32px;
+    }
+
+    h2 {
+        font-family: "Angry", sans-serif;
+        font-size: 48px;
+    }
+
+    p {
+        display: none;
+        font-size: 14px;
+    }
+
+    .hero-section {
+        padding: 16px;
+        padding-top: 16px;
+    }
+
+    .hero-title {
+        justify-content: start;
+        align-items: start;
+        text-align: start;
+    }
+
+    .hero-title p {
+        margin-top: 32px;
+        margin-left: 0px;
+        font-size: 18px;
+        text-align: start;
+    }
+
+    .hero-h1-logo {
+        justify-content: start;
+        align-items: start;
+    }
+
+    .hero-eyes {
+        height: 100px;
+        background-color: #FF33EB;
+        width: 100%;
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-back {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        background-color: transparent;
+
+        animation: back-eyes 6s infinite;
+    }
+
+    .hero-front {
+        position: relative;
+        width: 40%;
+        height: 40%;
+        background-color: transparent;
+
+        animation: eyes 6s infinite;
+    }
+
+    .hero-anchors {
+        display: none;
+    }
+
+    /* MARQUEE 1 */
+
+    .marquee-1 {
+        height: 80px;
+    }
+
+    /* BEOPEN (SECOND) SECTION */
+
+    .beopen {
+        padding: 16px;
+        height: 400px;
+    }
+
+    .beopen-h3-description {
+        margin-top: 24px;
+    }
+
+    .beopen-title {
+        gap: 24px;
+    }
+
+    .beopen-photo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 24px;
+        width: 250px;
+        height: 100px;
+    }
+
+    .talking-man {
+        padding: 16px;
+        width: 100px;
+        margin-top: 110px;
+        animation: talking-man 2s infinite;
+    }
+
+    .talking-man-mouth {
+        position: absolute;
+        width: 50px;
+        margin-top: 230px;
+        animation: talking-mouth 2s infinite;
+    }
+
+    .beopen-photo-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 16px;
+
+        margin-top: 32px;
+        align-items: end;
+    }
+
+    .beopen-photo-2 h2 {
+        margin-top: 0px;
+        display: block;
+    }
+
+    .frightened-man {
+        width: 100px;
+        margin: 0px;
+        margin-right: 170px;
+        margin-top: 40px;
+        padding-bottom: 16px;
+        position: relative;
+        animation: frightened-man 0.1s infinite;
+    }
+
+    .frightened-man-eyes {
+        position: absolute;
+        width: 50px;
+        left: -70px;
+        margin-right: 200px;
+        margin-top: 90px;
+
+        animation: frightened-eyes 0.1s infinite;
+    }
+
+    @keyframes frightened-eyes {
+        0% {transform: translateX(0px);}
+        100% {transform: translateX(2px)}
+    }
+
+    @keyframes frightened-man {
+        0% {transform: translateX(2px)}
+        100% {transform: translateX(0px)}
+    }
+
+    .marquee-2 {
+        height: 80px;
+    }
+
+    .friendship {
+        height: 425px;
+    }
+
+    .friendship-title {
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .friendship-icon-h3 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .friendship-icon-h3 h3 {
+        font-size: 32px;
+    }
+
+    .friendship-icon-h3 img {
+        margin-bottom: 32px;
+    }
+
+    .white-star {
+        width: 100px;
+        margin: 0px;
+        animation: star-dance 3s infinite;
+        filter: drop-shadow(0 0 20px #ffffff);
+    }
+
+    .viruses {
+        height: 325px;
+        padding: 16px;
+        background-color: #FF33EB;
+        margin-top: -5px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .hostile-man {
+        position: relative;
+        height: 100px;
+        margin-top: 64px;
+        margin-left: 15%;
+        animation: hostile-man 2s infinite;
+    }
+
+    .hostile-man-eyes {
+        margin-left: -60px;
+        margin-top: 100px;
+        height: 7px;
+        animation: hostile-eyes 2s infinite;
+    }
+
+    .shield {
+        margin-top: 64px;
+        margin-left: 24px;
+        height: 100px;
+        animation: shield-anim 2s infinite;
+    }
+
+    .plane-group {
+        display: flex;
+        margin-right: 24px;
+        margin-top: 32px;
+    }
+
+    .plane-1 {
+        height: 20px;
+        margin-left: 30px;
+        animation: plane-1 2s infinite;
+    }
+
+    @keyframes plane-1 {
+        0% {transform: translateX(0px) translateY(0px)}
+        10% {transform: translateX(-100px) translateY(100px) rotate(-20deg)}
+        40% {transform: translateX(0px) translateY(0px)}
+        60% {transform: translateX(0px) translateY(5px)}
+        80% {transform: translateX(0px) translateY(0px)}
+        100% {transform: translateX(10px) translateY(-5px) rotate(5deg)}
+    }
+
+    .plane-2 {
+        height: 20px;
+        margin-top: 32px;
+        animation: plane-2 2s infinite;
+    }
+
+    @keyframes plane-2 {
+        0% {transform: translateX(0px) translateY(5px)}
+        10% {transform: translateX(0px) translateY(5px)}
+        40% {transform: translateX(0px) translateY(0px)}
+        65% {transform: translateX(10px) translateY(-5px) rotate(5deg)}
+        80% {transform: translateX(-140px) translateY(20px) rotate(-20deg)}
+        90% {transform: translateX(0px) translateY(0px)}
+        100% {transform: translateX(0px) translateY(5px)}
+    }
+
+    .plane-3 {
+        height: 20px;
+        margin-top: 0px;
+        margin-left: -60px;
+        animation: plane-3 1s infinite;
+    }
+
+    @keyframes plane-3 {
+        0% {transform: translateX(0px) translateY(0px)}
+        50% {transform: translateX(0px) translateY(5px)}
+        100% {transform: translateX(0px) translateY(0px)}
+    }
+
+    .viruses-description p {
+        display: none;
+    }
+
+    .attention {
+        height: 475px;
+        width: 320px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .attention p {
+        display: none;
+    }
+
+    .attention-photo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: -180px;
+    }
+
+    .key-group {
+        display: flex;
+        padding: 32px;
+        padding-top: 32px;
+        z-index: 50;
+    }
+
+    .key-1 {
+        height: 40px;
+        margin-top: 48px;
+        animation: key auto linear;
+        animation-timeline: scroll(root block);
+    }
+
+    @keyframes key {
+        0% {transform: translateX(0px)}
+        100% {transform: translateX(300px)}
+    }
+
+    .key-2 {
+        margin-top: 180px;
+        margin-left: -80px;
+        height: 180px;
+        animation: key auto linear;
+        animation-timeline: scroll(root block);
+    }
+
+    .key-3 {
+        margin-top: 40px;
+        margin-left: -240px;
+        height: 80px;
+        animation: key auto linear;
+        animation-timeline: scroll(root block);
+    }
+
+    .keyhole {
+        display: none;
+    }
+
+    .crowd {
+        height: 250px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        background-color: #FF33EB;
+        margin-top: -5px;
+    }
+
+    .crowd-1 {
+        animation: crowd-1 10s infinite;
+    }
+
+    @keyframes crowd-1{
+        0% { transform: translateX(0px) rotate(0deg)}
+        10% { transform: translateX(-5px) rotate(5deg)}
+        20% { transform: translateX(-10px) rotate(3deg)}
+        30% { transform: translateX(-10px) rotate(0deg)}
+        40% { transform: translateX(-10px)}
+        50% { transform: translateX(-10px) rotate(2deg)}
+        53% { transform: translateX(-10px) rotate(-3deg)}
+        58% { transform: translateX(-10px) rotate(4deg)}
+        62% { transform: translateX(-10px) rotate(4deg)}
+        64% { transform: translateX(-10px) rotate(-3deg)}
+        69% { transform: translateX(-10px) rotate(2deg)}
+        72% { transform: translateX(-10px) rotate(-3deg)}
+        75% { transform: translateX(-10px) rotate(2deg)}
+        80% { transform: translateX(-5px) rotate(0deg)}
+        95% { transform: translateX(0px) rotate(0deg)}
+        100% { transform: translateX(0px) rotate(0deg)}
+    }
+
+    .crowd-2 {
+        animation: crowd-2 10s infinite;
+    }
+
+    @keyframes crowd-2 {
+        0% { transform: translateX(0px) rotate(0deg)}
+        10% { transform: translateX(-15px)}
+        20% { transform: translateX(-35px)}
+        30% { transform: translateX(-35px)}
+        40% { transform: translateX(-35px)}
+        50% { transform: translateX(-35px) rotate(-3deg) scaleX(-1)}
+        53% { transform: translateX(-35px) rotate(2deg) scaleX(-1)}
+        58% { transform: translateX(-35px) rotate(-3deg) scaleX(-1)}
+        62% { transform: translateX(-35px) rotate(2deg) scaleX(-1)}
+        64% { transform: translateX(-35px) rotate(-3deg) scaleX(-1)}
+        69% { transform: translateX(-35px) rotate(2deg) scaleX(-1)}
+        72% { transform: translateX(-35px) rotate(-3deg) scaleX(-1)}
+        75% { transform: translateX(-35px) rotate(2deg) scaleX(-1)}
+        80% { transform: translateX(-15px) rotate(0deg) scaleX(0)}
+        95% { transform: translateX(0px) rotate(0deg)}
+        100% { transform: translateX(0px) rotate(0deg)}
+    }
+
+    .crowd-3 {
+        animation: crowd-3 10s infinite;
+    }
+
+    @keyframes crowd-3{
+        0% { transform: translateX(0px) rotate(0deg) scaleX(0)}
+        10% { transform: translateX(-25px)}
+        20% { transform: translateX(-40px) rotate(3deg)}
+        30% { transform: translateX(-40px)}
+        40% { transform: translateX(-15px) rotate(0deg) scaleX(-1)}
+        50% { transform: translateX(25px) rotate(-3deg) scaleX(-1)}
+        60% { transform: translateX(5px) rotate(0deg) scaleX(-1)}
+        95% { transform: translateX(0px) rotate(10deg) scaleX(-1)}
+        100% { transform: translateX(0px) rotate(0deg) scaleX(0)}
+    }
+
+    .crowd-4 {
+        animation: crowd-4 10s infinite;
+    }
+
+    @keyframes crowd-4{
+        0% { transform: translateX(0px) rotate(0deg)}
+        10% { transform: translateX(-5px)}
+        20% { transform: translateX(-15px) rotate(3deg)}
+        30% { transform: translateX(-15px) rotate(3deg)}
+        35% { transform: translateX(0px) rotate(0deg)}
+        50% { transform: translateX(0px) rotate(-2deg) }
+        60% { transform: translateX(0px) rotate(-5deg)}
+        80% { transform: translateX(0px) rotate(-2deg)}
+        90% { transform: translateX(0px) rotate(0deg)}
+        100% { transform: translateX(0px) rotate(0deg)}
+    }
+
+    .crowd p{
+        display: none;
+    }
+
+    .crowd-photo {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        height: 64px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 32px;
+    }
+
+    .crowd-1, .crowd-2, .crowd-3, .crowd-4{
+        width: 64px;
+    }
+
+    .crowd-title {
+        margin-left: 0px;
+    }
+
+    .footer-text{
+        display: none;
+    }
+
+    .pale-text {
+        display: none;
+    }
+    
+    footer {
+        padding: 16px;
+        height: 350px;
+    }
+
+    .footer-glasses {
+        margin-top: 24px;
+        display: flex;
+    }
+
+    .glasses {
+        position: relative;
+        width: 83%;
+        margin-left: 15%;
+    }
+
+    .footer-eyes {
+        position: absolute;
+        width: 36%;
+        margin-left: 46%;
+        animation: glasses auto linear;
+        animation-timeline: scroll(root block);
+    }
+
+    @keyframes glasses {
+        0% {transform: translateX(0px)}
+        85% {transform: translateX(-20px) translateY(-50px) scaleY(0.3)}
+        90% {transform: translateX(-20px) translateY(-30px) scaleY(0.5)}
+        100% {transform: translateX(-10px) translateY(-5px) scaleY(0.8)}
+    }
+}

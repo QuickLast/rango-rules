@@ -10,6 +10,7 @@ body {
     cursor: url('images/bitmap/cursor.png'), pointer;
     max-width: 1440px;
     margin: auto;
+    overflow-x: hidden;
 }
 
 h2 {

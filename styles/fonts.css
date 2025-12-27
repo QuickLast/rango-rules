@@ -50,7 +50,7 @@
 
 @font-face {
     font-family: 'Angry';
-    src: url('../fonts/Angry.ttf') format('ttf');
+    src: url('../fonts/Angry.ttf') format('ttf'), url('../fonts/Angry.otf') format('otf'), url('../fonts/Angry.woff') format('woff'), url('..fonts/Angry.woff2') format('woff2');
     font-weight: 800;
     font-style: normal;
 }

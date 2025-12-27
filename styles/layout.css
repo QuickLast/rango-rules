@@ -796,7 +796,7 @@ footer {
 
 .footer-eyes {
     position: absolute;
-    width: 36%;
+    width: 36%; 
     margin-top: 8%;
     margin-left: 46%;
     animation: glasses auto linear;
@@ -841,15 +841,27 @@ footer h3:hover {
         position: absolute;
         width: 20%;
         margin-left: 25%;
+        animation: none
+    }
+}
+
+/* Desktop 1440px */
+
+@media(max-width: 1440px) {
+    .footer-eyes {
+        position: absolute;
+        width: 36%; 
+        margin-top: 8%;
+        margin-left: 46%;
         animation: glasses auto linear;
         animation-timeline: scroll(root block);
     }
 
     @keyframes glasses {
         0% {transform: translateX(0px)}
-        85% {transform: translateX(-20px) translateY(-50px) scaleY(0.3)}
-        90% {transform: translateX(-20px) translateY(-30px) scaleY(0.5)}
-        100% {transform: translateX(-10px) translateY(-5px) scaleY(0.8)}
+        85% {transform: translateX(-20px) translateY(-120px) scaleY(0.3)}
+        90% {transform: translateX(-20px) translateY(-80px) scaleY(0.5)}
+        100% {transform: translateX(-10px) translateY(60px) scaleY(0.8)}
     }
 }
 

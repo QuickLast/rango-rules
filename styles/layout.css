@@ -8,6 +8,8 @@
 body {
     background-color: black;
     cursor: url('images/bitmap/cursor.png'), pointer;
+    max-width: 1440px;
+    margin: auto;
 }
 
 h2 {
@@ -830,6 +832,25 @@ footer h3:hover {
 .pale-text {
     color:#595959;
     font-size: 24px;
+}
+
+/* 4K 2560 */
+
+@media(max-width: 2560px) {
+    .footer-eyes {
+        position: absolute;
+        width: 20%;
+        margin-left: 25%;
+        animation: glasses auto linear;
+        animation-timeline: scroll(root block);
+    }
+
+    @keyframes glasses {
+        0% {transform: translateX(0px)}
+        85% {transform: translateX(-20px) translateY(-50px) scaleY(0.3)}
+        90% {transform: translateX(-20px) translateY(-30px) scaleY(0.5)}
+        100% {transform: translateX(-10px) translateY(-5px) scaleY(0.8)}
+    }
 }
 
 /* DESKTOP 1366px */
@@ -1930,6 +1951,60 @@ footer h3:hover {
     }
 }
 
+@media(max-width: 375px) {
+    .frightened-man {
+        width: 100px;
+        margin: 0px;
+        margin-right: 235px;
+        margin-top: 40px;
+        padding-bottom: 16px;
+        position: relative;
+        animation: frightened-man 0.1s infinite;
+    }
+
+    .frightened-man-eyes {
+        position: absolute;
+        width: 50px;
+        left: -70px;
+        margin-right: 200px;
+        margin-top: 90px;
+
+        animation: frightened-eyes 0.1s infinite;
+    }
+
+    .talking-man {
+        padding: 16px;
+        width: 100px;
+        margin-left: -20px;
+        margin-top: 110px;
+        animation: talking-man 2s infinite;
+    }
+
+    .talking-man-mouth {
+        position: absolute;
+        width: 50px;
+        margin-left: 0px;
+        margin-top: 230px;
+        animation: talking-mouth 2s infinite;
+    }
+
+    .footer-eyes {
+        position: absolute;
+        width: 30%;
+        margin-left: 50%;
+        animation: glasses auto linear;
+        animation-timeline: scroll(root block);
+    }
+
+    @keyframes glasses {
+        0% {transform: translateX(0px)}
+        85% {transform: translateX(-20px) translateY(-50px) scaleY(0.3)}
+        90% {transform: translateX(-20px) translateY(-30px) scaleY(0.5)}
+        100% {transform: translateX(-10px) translateY(-5px) scaleY(0.8)}
+    }
+}
+
+
 /* MOBILE 320px */
 
 @media(max-width:320px) {
@@ -2041,6 +2116,7 @@ footer h3:hover {
         padding: 16px;
         width: 100px;
         margin-top: 110px;
+        margin-left: -80px;
         animation: talking-man 2s infinite;
     }
 
@@ -2048,6 +2124,7 @@ footer h3:hover {
         position: absolute;
         width: 50px;
         margin-top: 230px;
+        margin-left: -60px;
         animation: talking-mouth 2s infinite;
     }
 
@@ -2069,7 +2146,7 @@ footer h3:hover {
     .frightened-man {
         width: 100px;
         margin: 0px;
-        margin-right: 170px;
+        margin-right: 200px;
         margin-top: 40px;
         padding-bottom: 16px;
         position: relative;
@@ -2079,7 +2156,7 @@ footer h3:hover {
     .frightened-man-eyes {
         position: absolute;
         width: 50px;
-        left: -70px;
+        left: -85px;
         margin-right: 200px;
         margin-top: 90px;
 
@@ -2220,8 +2297,7 @@ footer h3:hover {
     }
 
     .attention {
-        height: 475px;
-        width: 320px;
+        height: 400px;
         padding: 16px;
         display: flex;
         flex-direction: column;
@@ -2247,27 +2323,25 @@ footer h3:hover {
     }
 
     .key-1 {
-        height: 40px;
-        margin-top: 48px;
-        animation: key auto linear;
-        animation-timeline: scroll(root block);
+        display: none;
     }
 
     @keyframes key {
         0% {transform: translateX(0px)}
+        80% {transform: translateX(300px)}
         100% {transform: translateX(300px)}
     }
 
     .key-2 {
-        margin-top: 180px;
+        margin-top: 150px;
         margin-left: -80px;
-        height: 180px;
+        height: 100px;
         animation: key auto linear;
         animation-timeline: scroll(root block);
     }
 
     .key-3 {
-        margin-top: 40px;
+        margin-top: 50px;
         margin-left: -240px;
         height: 80px;
         animation: key auto linear;
@@ -2415,8 +2489,8 @@ footer h3:hover {
 
     .footer-eyes {
         position: absolute;
-        width: 36%;
-        margin-left: 46%;
+        width: 30%;
+        margin-left: 50%;
         animation: glasses auto linear;
         animation-timeline: scroll(root block);
     }
@@ -2429,24 +2503,3 @@ footer h3:hover {
     }
 }
 
-@media(max-width: 375px) {
-    .frightened-man {
-        width: 100px;
-        margin: 0px;
-        margin-right: 240px;
-        margin-top: 40px;
-        padding-bottom: 16px;
-        position: relative;
-        animation: frightened-man 0.1s infinite;
-    }
-
-    .frightened-man-eyes {
-        position: absolute;
-        width: 50px;
-        left: -70px;
-        margin-right: 200px;
-        margin-top: 90px;
-
-        animation: frightened-eyes 0.1s infinite;
-    }
-}
